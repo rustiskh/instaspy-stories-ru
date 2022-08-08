@@ -545,7 +545,7 @@
 
 .main::after {
   content: "";
-  background-image: url(/img/guy-simple.svg);
+  background-image: url(../img/guy-simple.svg);
   width: 155px;
   height: 400px;
   position: absolute;
@@ -936,7 +936,7 @@
   left: 475px;
   width: 129px;
   height: 129px;
-  background-image: url(/icons/shape-circle_yellow.svg);
+  background-image: url(../icons/shape-circle_yellow.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -957,7 +957,7 @@
   left: -20px;
   width: 149px;
   height: 91px;
-  background-image: url(/icons/shape-dots_blue.svg);
+  background-image: url(../icons/shape-dots_blue.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -978,7 +978,7 @@
   left: -20px;
   width: 129px;
   height: 129px;
-  background-image: url(/icons/shape-circle_red.svg);
+  background-image: url(../icons/shape-circle_red.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -999,7 +999,7 @@
   left: 435px;
   width: 149px;
   height: 91px;
-  background-image: url(/icons/shape-dots_green.svg);
+  background-image: url(../icons/shape-dots_green.svg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1143,7 +1143,7 @@
   min-height: 700px;
   margin-top: 100px;
   padding-top: 44px;
-  background: url(/img/opinion-bg.svg);
+  background: url(../img/opinion-bg.svg);
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
