@@ -1,0 +1,49 @@
+.header {
+    position: relative;
+    background: #2A3342;
+
+    .container {
+        min-height: 80px;
+        height: 100%;
+        display: flex;
+        padding: 0 18px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include tablet {
+            padding: 0 10px;
+        }
+    }
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #333F51;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid #8896AB;
+    }
+}
+
+.main-logo {
+    height: 40px;
+
+    @include tablet {
+        display: none;
+    }
+
+    &_mini {
+        display: none;
+        height: 36px;
+
+        @include tablet {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.features {
+	margin-top: 100px;
+
+	.title-h2 {
+		margin-top: 16px;
+	}
+
+	.sub-title {
+		margin-top: 16px;
+		max-width: 870px;
+	}
+
+	&-wrapper {
+		display: flex;
+		justify-content: center;
+		column-gap: 30px;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.features-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 370px;
+	min-height: 262px;
+	text-align: center;
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 64px;
+		height: 64px;
+		background: #22c55e;
+		border-radius: 6px;
+		margin-top: 28px;
+	}
+
+	&__title {
+		margin-top: 28px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+		text-align: center;
+		color: #2a3342;
+
+		@include laptop {
+			font-size: 20px;
+			line-height: 32px;
+		}
+
+		@include tablet {
+			font-size: 20px;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		margin-top: 14px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #556987;
+	}
+}
+
+// slider styles
+
+.features-card.slick-slide {
+	display: flex;
+	max-width: 300px;
+	margin-right: 80px;
+}
+
+.features-wrapper .slick-dots {
+	display: flex;
+	column-gap: 16px;
+	position: absolute;
+	list-style: none;
+	top: 270px;
+
+	li {
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+		background: #d5d5d5;
+
+		&.slick-active {
+			background: #22c55e;
+		}
+		button {
+			display: none;
+		}
+	}
+}

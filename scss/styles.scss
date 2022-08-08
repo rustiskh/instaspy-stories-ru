@@ -1,0 +1,73 @@
+@import "general/mixins-media";
+@import "general/typography";
+@import "general/bg-shapes";
+@import "blocks/buttons";
+@import "blocks/search-form";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/main";
+@import "blocks/numbers";
+@import "blocks/spy-promo";
+@import "blocks/features";
+@import "blocks/opinion";
+@import "blocks/faq";
+@import "blocks/blog";
+@import "blocks/cta";
+@import "blocks/footer";
+@import "user-stories-page/user-stories";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+}
+
+body {
+	background: #f5f4f8;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+
+	@include laptop {
+		max-width: 702px;
+	}
+
+	@include tablet {
+		max-width: 310px;
+	}
+}
+
+span.spy,
+a.spy-link {
+	font-weight: 700;
+	font-size: 20px;
+	text-decoration-line: underline;
+	color: #22c55e;
+}
+
+.block-label {
+	width: fit-content;
+	height: 22px;
+	padding: 3px 8px;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #22c55e;
+
+	&_blue {
+		background: #dce3fc;
+		color: #2250c5;
+	}
+
+	@include tablet {
+		font-size: 8px;
+	}
+}

@@ -1,0 +1,59 @@
+.numbers.container {
+	margin-top: 100px;
+
+	@include tablet {
+		margin-top: 50px;
+	}
+}
+
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 56px 30px;
+
+	@include tablet {
+		row-gap: 34px;
+	}
+
+	&-item {
+		width: 268px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		@include laptop {
+			width: 244px;
+		}
+
+		&__title {
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 28px;
+			color: #000000;
+
+			@include laptop {
+				font-size: 40px;
+			}
+		}
+
+		&__text {
+			margin-top: 34px;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+			text-align: center;
+			color: #556987;
+
+			@include laptop {
+				margin-top: 24px;
+				font-size: 16px;
+			}
+
+			@include tablet {
+				margin-top: 16px;
+			}
+		}
+	}
+}

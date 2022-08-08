@@ -1,0 +1,20 @@
+.btn_normal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 295px;
+	height: 56px;
+	background: #22c55e;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	color: #f0fdf4;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,166 @@
+.main.container {
+	margin-top: 70px;
+}
+.main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #2a3342;
+	border-radius: 24px;
+
+	z-index: 10;
+
+	@include laptop {
+		margin-top: 48px;
+	}
+
+	@include tablet {
+		overflow: hidden;
+	}
+
+	&::after {
+		content: "";
+		background-image: url(/img/guy-simple.svg);
+		width: 155px;
+		height: 400px;
+		position: absolute;
+		left: -100px;
+		bottom: 0px;
+
+		@media screen and (max-width: 866px) {
+			display: none;
+		}
+	}
+
+	.title-h1 {
+		max-width: 894px;
+		margin-top: 28px;
+
+		@include laptop {
+			max-width: 484px;
+			margin-top: 46px;
+		}
+
+		@include tablet {
+			max-width: 284px;
+		}
+	}
+
+	&__text {
+		max-width: 802px;
+		margin-top: 25px;
+
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #8896ab;
+
+		@include laptop {
+			max-width: 434px;
+			font-size: 18px;
+		}
+
+		@include tablet {
+			max-width: 274px;
+			font-size: 15px;
+			line-height: 20px;
+			margin-top: 16px;
+		}
+	}
+
+	.search-form {
+		margin-top: 35px;
+
+		@include laptop {
+			margin-top: 16px;
+		}
+
+		@include tablet {
+			margin-top: 24px;
+		}
+	}
+
+	&__disclaimer {
+		max-width: 715px;
+		margin-top: 25px;
+
+		margin-top: 60px;
+		margin-bottom: 48px;
+
+		text-align: center;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		text-align: center;
+		color: #8896ab;
+
+		a.spy-link {
+			font-size: 14px;
+		}
+
+		@include laptop {
+			max-width: 320px;
+		}
+
+		@include tablet {
+			max-width: 276px;
+		}
+	}
+}
+
+.bg-shape {
+	&_yellow {
+		width: 90px;
+		height: 90px;
+		left: 12px;
+		top: 12px;
+		z-index: -1;
+
+		@include tablet {
+			width: 279px;
+			height: 279px;
+			left: -189px;
+			top: -179px;
+		}
+	}
+
+	&_red {
+		width: 90px;
+		height: 90px;
+		right: 12px;
+		bottom: 12px;
+
+		@include tablet {
+			width: 279px;
+			height: 279px;
+			right: -159px;
+			bottom: -189px;
+		}
+	}
+
+	&_green {
+		right: 24px;
+		top: 24px;
+
+		@include tablet {
+			width: 149px;
+			height: 91px;
+			right: -36px;
+			top: -36px;
+		}
+	}
+
+	&_blue {
+		left: 24px;
+		bottom: 24px;
+
+		@include tablet {
+			width: 149px;
+			height: 91px;
+			left: -56px;
+			bottom: -56px;
+		}
+	}
+}

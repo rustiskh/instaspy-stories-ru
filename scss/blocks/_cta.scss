@@ -1,0 +1,67 @@
+.cta {
+	margin-top: 100px;
+
+	.container {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 420px;
+		border-radius: 24px;
+		background: #2a3342;
+		overflow: hidden;
+
+		.bg-shape {
+			z-index: 1;
+		}
+	}
+
+	.title-h2 {
+		max-width: 668px;
+		text-align: center;
+	}
+
+	&__text {
+		max-width: 522px;
+		margin: 16px auto;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #8896ab;
+		text-align: center;
+
+		@include laptop {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+		@include tablet {
+			margin-top: 16px;
+			margin-bottom: 32px;
+			font-size: 15px;
+			line-height: 20px;
+		}
+	}
+
+	.btn_normal {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 24px;
+		color: #f0fdf4;
+	}
+}
+
+.cta .bg-shape_guy {
+	top: 21px;
+	left: 79px;
+
+	@include laptop {
+		left: -26px;
+	}
+
+	@include tablet {
+		display: none;
+	}
+}
