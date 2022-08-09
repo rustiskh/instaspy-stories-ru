@@ -247,6 +247,12 @@
 		color: #22c55e;
 	}
 
+	&__video {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+	}
+
 	&__footer {
 		display: flex;
 		justify-content: space-between;
@@ -370,4 +376,103 @@
 
 .user-stories-wrapper .slick-dots li button {
 	display: none;
+}
+
+// modal styles
+
+.modal-stories-view {
+	position: fixed;
+	display: block;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(45, 45, 45, 0.8);
+	z-index: 9;
+
+	.modal-body {
+		position: absolute;
+		width: 358px;
+		height: 584px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		&__close {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			background: #ffffff;
+			border-radius: 6px;
+			cursor: pointer;
+
+			position: absolute;
+			top: 0px;
+			right: 0px;
+
+			&:hover {
+				border: 2px solid #8896ab;
+			}
+		}
+
+		.modal-wrapper {
+			margin-top: 74px;
+		}
+	}
+
+	.modal-wrapper .slick-slide {
+		width: 358px;
+		height: 510px;
+	}
+
+	.modal-wrapper .slick-arrow {
+		width: 48px;
+		height: 44px;
+
+		background: #ffffff;
+		border-radius: 8px;
+		border: none;
+		cursor: pointer;
+	}
+
+	.modal-wrapper .slick-next {
+		position: absolute;
+		top: -14.5%;
+		left: 20%;
+	}
+
+	.modal-wrapper .slick-prev {
+		position: absolute;
+		top: -14.5%;
+		left: 0%;
+	}
+
+	.modal-wrapper .slick-dots {
+		display: flex;
+		position: absolute;
+		top: -10%;
+		left: 60%;
+		transform: translate(-50%, -50%);
+		font-size: 0;
+	}
+
+	// .user-stories-wrapper .slick-dots ul {
+	// 	list-style: none;
+	// }
+
+	.modal-wrapper .slick-dots .slick-active button {
+		display: block;
+		border: none;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: -0.02em;
+		color: #ffffff;
+		background: none;
+	}
+
+	.modal-wrapper .slick-dots li button {
+		display: none;
+	}
 }

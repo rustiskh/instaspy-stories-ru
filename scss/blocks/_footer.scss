@@ -1,8 +1,10 @@
 .footer {
+	position: relative;
 	min-height: 380px;
 	background: #2a3342;
 	margin-top: 120px;
 	padding-top: 80px;
+	z-index: 10;
 
 	&__content {
 		display: flex;
