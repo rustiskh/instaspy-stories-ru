@@ -22,6 +22,10 @@
 	font-family: "Montserrat", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background: #f5f4f8;
 }
@@ -69,5 +73,20 @@ a.spy-link {
 
 	@include tablet {
 		font-size: 8px;
+	}
+}
+
+.pageup {
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 1000;
+
+	@include tablet {
+		height: 30px;
+		width: 30px;
+		bottom: 40px;
+		right: 40px;
 	}
 }
