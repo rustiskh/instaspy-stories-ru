@@ -36,3 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+// pageUp
+
+document.addEventListener("DOMContentLoaded", function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 800) {
+			$(".pageup").fadeIn();
+		} else {
+			$(".pageup").fadeOut();
+		}
+	});
+});

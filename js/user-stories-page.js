@@ -46,15 +46,17 @@ $(document).ready(function () {
 			'<button type="button" class="slick-next"><img src="icons/icon-arrow-right.svg"></button>',
 	});
 
-	var videoSliderBtns = document.querySelectorAll(
+	var videoModalSliderBtns = document.querySelectorAll(
 		".modal-wrapper .slick-dots button"
 	);
 	console.log(videoSliderBtns);
-	videoSliderBtns.forEach(function (videoSliderBtn) {
+	videoModalSliderBtns.forEach(function (videoModalSliderBtn) {
 		var textContent =
-			videoSliderBtn.textContent + " / " + videoSliderBtns.length;
+			videoModalSliderBtn.textContent +
+			" / " +
+			videoModalSliderBtns.length;
 		console.log(textContent);
-		videoSliderBtn.textContent = textContent;
+		videoModalSliderBtn.textContent = textContent;
 	});
 
 	// open-close modal
