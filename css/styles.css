@@ -2184,13 +2184,13 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow-y: scroll;
 }
 
 @media (max-width: 740px) {
   .modal-stories-view .modal-body {
     width: 310px;
-    height: 541px;
-    top: 35%;
+    height: 465px;
   }
 }
 
@@ -2226,6 +2226,7 @@
   width: 358px;
   height: 510px;
   margin: 0 15px;
+  border-radius: 14px;
 }
 
 @media (max-width: 740px) {
