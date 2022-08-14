@@ -1,0 +1,99 @@
+.error-page {
+	position: relative;
+	background: #2a3342;
+	min-height: 768px;
+	padding-top: 100px;
+	margin-bottom: -120px;
+	z-index: 1;
+
+	@include laptop {
+		padding-top: 60px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@include laptop {
+			flex-direction: column;
+		}
+	}
+
+	&__info {
+		max-width: 554px;
+
+		@include laptop {
+			display: flex;
+			flex-direction: column;
+			// justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	&__text {
+		margin-top: 24px;
+	}
+
+	&__img {
+		@include laptop {
+			width: 280px;
+			margin-top: 60px;
+		}
+	}
+
+	.btn_normal {
+		margin-top: 38px;
+	}
+
+	.bg-shape {
+		&_yellow {
+			top: 24px;
+			left: 24px;
+
+			@include tablet {
+				top: -8px;
+				left: -8px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		&_green {
+			top: 24px;
+			right: 24px;
+
+			@include tablet {
+				top: -8px;
+				right: -8px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		&_red {
+			bottom: 24px;
+			right: 24px;
+
+			@include tablet {
+				bottom: -8px;
+				right: -8px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		&_blue {
+			bottom: 24px;
+			left: 24px;
+
+			@include tablet {
+				bottom: -8px;
+				left: -8px;
+				width: 100px;
+				height: 100px;
+			}
+		}
+	}
+}

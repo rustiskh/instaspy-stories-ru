@@ -1,7 +1,7 @@
 @import "general/mixins-media";
 @import "general/typography";
 @import "general/bg-shapes";
-@import "blocks/buttons";
+@import "general/buttons";
 @import "blocks/search-form";
 @import "blocks/header";
 @import "blocks/menu";
@@ -15,6 +15,8 @@
 @import "blocks/cta";
 @import "blocks/footer";
 @import "user-stories-page/user-stories";
+@import "404-page/404-page";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -28,6 +30,11 @@ html {
 
 body {
 	background: #f5f4f8;
+}
+
+html,
+body {
+	overflow-x: hidden;
 }
 
 .container {
