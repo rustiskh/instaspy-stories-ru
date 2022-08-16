@@ -1,88 +1,89 @@
 .menu {
-    position: absolute;
-    top: 0px;
-    left: -314px;
-    width: 314px;
-    height: 100vh;
-    padding: 24px;
-    background: #2A3342;
-    z-index: 100;
-    transition: all 1s;
+	position: absolute;
+	top: 0px;
+	left: -314px;
+	width: 314px;
+	height: 100vh;
+	padding: 24px;
+	background: #2a3342;
+	z-index: 100;
+	transition: all 1s;
 
-    &__logo {
-        display: block;
-    }
+	&__logo {
+		display: block;
+	}
 
-    &_active {
-        left: 0px;
-    }
+	&_active {
+		left: 0px;
+		position: fixed;
+	}
 
-    &__header {
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-    }
+	&__header {
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+	}
 
-    &__link {
-        display: block;
-        width: 265px;
-        height: 48px;
-        background: none;
-        border-radius: 6px;
-        padding: 12px 0px 12px 16px;
-        
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #8896AB;
-        text-decoration: none;
+	&__link {
+		display: block;
+		width: 265px;
+		height: 48px;
+		background: none;
+		border-radius: 6px;
+		padding: 12px 0px 12px 16px;
 
-        &:hover {
-            background: #333F51;
-            color: #FFFFFF;
-        }
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #8896ab;
+		text-decoration: none;
 
-        &.spy-link {
-            position: relative;
+		&:hover {
+			background: #333f51;
+			color: #ffffff;
+		}
 
-            &::after {
-                content: "рекомендуем!";
-                position: absolute;
-                top: -4px;
-                left: 136px;
-                padding: 4px 10px;
-                background: linear-gradient(94.34deg, #EDCE76 -5.49%, #FA7E1E 12.43%, #D62976 50%, #962FBF 77.74%, #4F5BD5 105.49%);
-                border-radius: 6px;
-                transform: rotate(15deg);
-    
-                font-weight: 700;
-                font-size: 12px;
-                line-height: 20px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: none;
-            }
-        }
-    }
+		&.spy-link {
+			position: relative;
 
-    &__items {
-        list-style: none;
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+			&::after {
+				content: "рекомендуем!";
+				position: absolute;
+				top: -4px;
+				left: 136px;
+				padding: 4px 10px;
+				background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
+				border-radius: 6px;
+				transform: rotate(15deg);
 
-    &__label {
-        position: absolute;
-        padding: 4px 10px;
-        background: linear-gradient(94.34deg, #EDCE76 -5.49%, #FA7E1E 12.43%, #D62976 50%, #962FBF 77.74%, #4F5BD5 105.49%);
-        border-radius: 6px;
-        transform: rotate(15deg);
+				font-weight: 700;
+				font-size: 12px;
+				line-height: 20px;
+				text-transform: uppercase;
+				color: #ffffff;
+				text-decoration: none;
+			}
+		}
+	}
 
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 20px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-    }
+	&__items {
+		list-style: none;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__label {
+		position: absolute;
+		padding: 4px 10px;
+		background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
+		border-radius: 6px;
+		transform: rotate(15deg);
+
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
 }
