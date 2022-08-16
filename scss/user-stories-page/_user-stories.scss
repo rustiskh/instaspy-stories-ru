@@ -134,14 +134,7 @@
 		top: -12px;
 		left: 284px;
 		padding: 4px 10px;
-		background: linear-gradient(
-			94.34deg,
-			#edce76 -5.49%,
-			#fa7e1e 12.43%,
-			#d62976 50%,
-			#962fbf 77.74%,
-			#4f5bd5 105.49%
-		);
+		background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
 		border-radius: 6px;
 		transform: rotate(15deg);
 
@@ -321,6 +314,9 @@
 
 .stories-card.slick-slide {
 	margin-right: 20px;
+}
+
+.user-stories-wrapper .slick-list {
 	border-radius: 14px;
 }
 
