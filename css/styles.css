@@ -2121,6 +2121,9 @@
 
 .stories-card.slick-slide {
   margin-right: 20px;
+}
+
+.user-stories-wrapper .slick-list {
   border-radius: 14px;
 }
 
