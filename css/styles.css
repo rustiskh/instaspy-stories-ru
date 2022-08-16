@@ -1887,13 +1887,13 @@
   gap: 10px;
   width: 370px;
   height: 180px;
-  border: 0.5px solid #7b7b7b;
+  border: 0.8px solid #7b7b7b;
   border-radius: 8px;
 }
 
 @media (max-width: 740px) {
   .promo-block {
-    width: 296px;
+    width: 294px;
     height: 180px;
   }
 }
