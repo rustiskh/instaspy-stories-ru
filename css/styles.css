@@ -431,7 +431,7 @@
   width: 314px;
   height: 100vh;
   padding: 24px;
-  background: #2A3342;
+  background: #2a3342;
   z-index: 100;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -443,6 +443,7 @@
 
 .menu_active {
   left: 0px;
+  position: fixed;
 }
 
 .menu__header {
@@ -467,13 +468,13 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #8896AB;
+  color: #8896ab;
   text-decoration: none;
 }
 
 .menu__link:hover {
-  background: #333F51;
-  color: #FFFFFF;
+  background: #333f51;
+  color: #ffffff;
 }
 
 .menu__link.spy-link {
@@ -486,7 +487,7 @@
   top: -4px;
   left: 136px;
   padding: 4px 10px;
-  background: linear-gradient(94.34deg, #EDCE76 -5.49%, #FA7E1E 12.43%, #D62976 50%, #962FBF 77.74%, #4F5BD5 105.49%);
+  background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
   border-radius: 6px;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
@@ -494,7 +495,7 @@
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -509,7 +510,7 @@
 .menu__label {
   position: absolute;
   padding: 4px 10px;
-  background: linear-gradient(94.34deg, #EDCE76 -5.49%, #FA7E1E 12.43%, #D62976 50%, #962FBF 77.74%, #4F5BD5 105.49%);
+  background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
   border-radius: 6px;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
@@ -517,7 +518,7 @@
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .main.container {
