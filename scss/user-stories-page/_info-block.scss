@@ -1,0 +1,137 @@
+.user-stories-info-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1040px;
+    margin-bottom: 60px;
+
+    @include laptop {
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    @include tablet {
+        margin-bottom: 42px;
+    }
+}
+
+.user-info {
+	display: flex;
+	align-items: center;
+
+	@include tablet {
+		flex-direction: column;
+	}
+
+	&__avatar {
+		width: 200px;
+		height: 200px;
+		margin-right: 36px;
+		border-radius: 100%;
+		background-image: url();
+		background-color: purple;
+
+		@include tablet {
+			width: 150px;
+			height: 150px;
+			margin-right: 0;
+		}
+	}
+
+	&__account {
+		.user-info__user-login {
+			font-weight: 700;
+			font-size: 36px;
+			line-height: 44px;
+			letter-spacing: -0.02em;
+			color: #2a3342;
+			margin-bottom: 36px;
+
+			@include tablet {
+				font-size: 24px;
+				text-align: center;
+				margin-top: 25px;
+			}
+		}
+
+		.user-info__user-subscribers,
+		.user-info__user-subscriptions {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+			color: #556987;
+			margin-top: 16px;
+
+			span {
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 30px;
+				color: #556987;
+				margin-left: 20px;
+			}
+		}
+	}
+}
+
+.promo-block {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 12px;
+	gap: 10px;
+
+	width: 370px;
+	height: 180px;
+
+	border: 0.8px solid #7b7b7b;
+	border-radius: 8px;
+
+	@include tablet {
+		width: 294px;
+		height: 180px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: #556987;
+
+		@include tablet {
+			font-size: 16px;
+		}
+	}
+
+	&::after {
+		content: "рекомендуем!";
+		position: absolute;
+		top: -12px;
+		left: 284px;
+		padding: 4px 10px;
+		background: linear-gradient(94.34deg, #edce76 -5.49%, #fa7e1e 12.43%, #d62976 50%, #962fbf 77.74%, #4f5bd5 105.49%);
+		border-radius: 6px;
+		transform: rotate(15deg);
+
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 20px;
+		text-transform: uppercase;
+		color: #ffffff;
+		text-decoration: none;
+
+		@include tablet {
+			top: -17px;
+			left: 176px;
+		}
+	}
+
+	.promo-block__btn.btn_normal {
+		@include tablet {
+			width: 272px;
+			height: 56px;
+		}
+	}
+}

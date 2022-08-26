@@ -1,0 +1,42 @@
+.breadcrumb {
+    margin-bottom: 40px;
+    list-style: none;
+
+    .breadcrump__item {
+        display: inline;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+
+        @include tablet {
+            font-size: 16px;
+        }
+
+        &_last {
+            color: #98A0AC;
+        }
+
+        .breadcrump__link {
+            color: #676A6F;
+            text-decoration: none;
+            
+            
+            &:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+
+            &_last {
+                color: #98A0AC;
+                pointer-events: none;
+            }
+        }
+    }
+
+    // devider
+    li+li:before {
+        padding: 8px;
+        color: black;
+        content: "—\00a0";
+    }
+}

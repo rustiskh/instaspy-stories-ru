@@ -68,7 +68,11 @@
 		</header>
 
 		<section class="user-stories container">
-			<div class="user-stories__header">
+			<ul class="breadcrumb">
+				<li class="breadcrump__item"><a class="breadcrump__link" href="#">Главная</a></li>
+				<li class="breadcrump__item breadcrump__item_last"><a class="breadcrump__link breadcrump__link_last" href="#"></a> Сторис `@{user-login}`</li>
+			  </ul> 
+			<div class="user-stories-info-block">
 				<div class="user-info">
 					<div class="user-info__avatar"></div>
 					<div class="user-info__account">
@@ -218,10 +222,14 @@
 					<p class="user-stories-wrapper__text_empty">
 						У этого аккаунта сейчас нет новых сторис. <br />
 						Но это не значит, что твоя цель ничего не делает! <br />
-						Заходи на Инсташпион и узнай кому какие комменты пишутся, кому ставятся лайки и много другое!
+						Заходи на <a href="https://instashpion.ru" class="spy-link">Инсташпион</a> и узнай кому какие комменты пишутся, кому ставятся лайки и много другое!
 					</p>
 				</div>
 			</div>
+
+			<p class="user-stories__seo-txt">
+				Смотри истории пользователя @`${user-login}` анонимно. Всего у пользователя `${storiesCount}` новых сторис в Инстаграме.  У @`${user-login}` `${count}` подписчиков и `${count}`подписок
+			</p>
 		</section>
 
 		<section class="cta">
