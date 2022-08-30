@@ -9,7 +9,7 @@
         line-height: 30px;
 
         @include tablet {
-            font-size: 16px;
+            font-size: 12px;
         }
 
         &_last {
@@ -36,7 +36,7 @@
     // devider
     li+li:before {
         padding: 8px;
-        color: black;
+        color: #676A6F;
         content: "—\00a0";
     }
 }

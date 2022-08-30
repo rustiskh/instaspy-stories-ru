@@ -1,0 +1,21 @@
+.all-stories-card {
+    width: 158px;
+    text-decoration: none;
+
+    &__avatar {
+        width: 158px;
+        height: 158px;
+        border-radius: 100%;
+        background-image: url();
+        background-color: palevioletred;
+    }
+
+    &__login {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+        color: #2A3342;
+        text-align: center;
+    }
+}

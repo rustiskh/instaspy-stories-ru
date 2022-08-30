@@ -1,6 +1,7 @@
 @import "stories-card";
 @import "info-block";
 @import "stories-wrapper";
+@import "user-stories-articles";
 
 .user-stories.container {
 	margin-top: 40px;
@@ -18,13 +19,13 @@
 
 	&__seo-txt {
 		margin: 0 auto;
-		margin-top: 85px;
+		margin-top: 46px;
 		width: 794px;
 		font-weight: 500;
 		font-size: 15px;
 		line-height: 26px;
 		text-align: center;
-		color: #556987;
+		color: #8896ab;
 
 		@include laptop {
 			width: 522px;

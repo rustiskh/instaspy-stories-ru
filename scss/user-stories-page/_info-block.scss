@@ -39,20 +39,33 @@
 	}
 
 	&__account {
-		.user-info__user-login {
-			font-weight: 700;
-			font-size: 36px;
-			line-height: 44px;
-			letter-spacing: -0.02em;
-			color: #2a3342;
+		.user-info__h1 {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+			color: #556987;
+			
 			margin-bottom: 36px;
 
 			@include tablet {
-				font-size: 24px;
 				text-align: center;
-				margin-top: 25px;
+			}
+
+			.user-info__user-login {
+				font-weight: 700;
+				font-size: 36px;
+				line-height: 44px;
+				letter-spacing: -0.02em;
+				color: #2a3342;
+	
+				@include tablet {
+					font-size: 24px;
+					text-align: center;
+					margin-top: 25px;
+				}
 			}
 		}
+
 
 		.user-info__user-subscribers,
 		.user-info__user-subscriptions {
