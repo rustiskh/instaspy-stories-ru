@@ -1,0 +1,38 @@
+.stories-blog-card {
+	width: 370px;
+	min-height: 396px;
+	display: flex;
+	flex-direction: column;
+    text-decoration: none;
+
+	@include tablet {
+		width: 310px;
+	}
+
+	&__link {
+		text-decoration: none;
+	}
+
+	&__img {
+		width: 100%;
+        border-radius: 6px;
+	}
+
+    &__label-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+	.block-label {
+		margin-top: 16px;
+		font-size: 12px;
+	}
+
+	.title-h3 {
+		margin-top: 16px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

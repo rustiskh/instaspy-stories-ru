@@ -1,0 +1,53 @@
+.user-stories-articles {
+    margin-top: 60px;
+
+    @include laptop {
+        margin-top: 80px;
+    }
+}
+
+.user-stories__articles-wrapper {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    max-width: 1170px;
+
+    @include laptop {
+        width: 100%;
+    }
+}
+
+.stories-blog-card.slick-slide {
+	margin-right: 30px;
+}
+
+.user-stories__articles-wrapper .slick-dots {
+	display: flex;
+	column-gap: 16px;
+	position: absolute;
+	list-style: none;
+	top: 400px;
+    left: 50%;
+	transform: translate(-50%, -50%);
+
+	@include tablet {
+		top: 320px;
+	}
+
+	li {
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+		background: #d5d5d5;
+
+		&.slick-active {
+			background: #22c55e;
+		}
+		button {
+			display: none;
+		}
+	}
+}
